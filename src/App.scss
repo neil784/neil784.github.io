@@ -1,0 +1,344 @@
+// SCSS Variables
+$primaryColor: #003559;
+//$secondaryColor: #f1e0c5;
+$secondaryColor: #fff8e7;
+$transitionTime: 0.4s;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+nav {
+    position: fixed;
+    background-color: $primaryColor;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 20px 45px;
+    z-index: 10;
+    transition: $transitionTime;
+}
+
+#neilprabhu {
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: $transitionTime;
+}
+
+#neilprabhu:hover {
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: $transitionTime;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+}
+
+nav.reduced #neilprabhu, nav.reduced ul li a {
+    font-size: 15px;
+}
+
+nav.aboutMeHighlight #nav-about-me {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+nav.internship2022Highlight #nav-internship-2022 {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+nav.myProjectsHighlight #nav-my-projects {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+nav.resumeHighlight #nav-resume {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+nav.learnMoreHighlight #nav-learn-more {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+}
+
+#background-image {
+    background-image: url('assets/background.jpg');
+    margin: auto;
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background-image h2 {
+    font-size: 60px; 
+}
+
+.dynamic-text {
+    color: #0e6ffc;
+    //color: #fff724;
+}
+
+#about-me {
+    background-color: $primaryColor;
+    color: white;
+    padding-top: 55px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+#about-me h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+
+#about-me p {
+    text-align: center;
+    font-size: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#me1 {
+    background-image: url('assets/me1.jpeg');
+    margin: auto;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#me2 {
+    background-image: url('assets/me2.jpeg');
+    margin: auto;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-projects {
+    background-color: $secondaryColor;
+    //padding: 20px; //50px
+    padding-top: 55px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#my-projects h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+
+#mp-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+#mp-container div  {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#pilotpal-div, #spark-div, #foodfinder-div {
+    width: 40%;
+}
+
+#mp-container h4 {
+    font-size: 25px;
+}
+
+#mp-container p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#internship-2022 {
+    background-color: $primaryColor;
+    color: white;
+    padding: 20px;
+    padding-left: 80px;
+    padding-top: 55px;
+    
+    text-align: center;
+    overflow: hidden;
+}
+
+#internship-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#internship-paragraph-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#editsearch {
+    position: relative;
+    right: 12%;
+}
+
+#internship-2022 h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+
+#internship-2022 p {
+    padding-top: 50px;
+    font-size: 24px;
+    text-align: justify;
+    width: 65%;
+}
+
+#education-and-skills {
+    background-color: $secondaryColor;
+    padding-top: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+}
+
+#education-and-skills h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+#course-and-skills p {
+    font-size: 22px;
+    text-align: center;
+}
+
+#education {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+#education h4 {
+    font-size: 22px;
+}
+
+#education div {
+    padding-bottom: 35px;
+}
+
+#course-and-skills {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+#resume {
+    background-color: $primaryColor;
+    color: white;
+    padding-top: 55px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#resume h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+
+#resume h4 {
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+#learn-more {
+    background-color: $secondaryColor;
+    padding: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#learn-more h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+#learn-more a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+#footer {
+    padding: 10px;
+    background-color: $primaryColor;
+    color: white;
+    text-align: center;
+}
+
+@media (width < 1152px) {
+    #internship-2022 p {
+        padding-top: 50px;
+        font-size: 20px;
+        text-align: justify;
+        width: 65%;
+    }
+
+    #pilotpal-div, #spark-div, #foodfinder-div {
+        width: 50%;
+    }
+}
