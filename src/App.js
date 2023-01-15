@@ -7,6 +7,7 @@ import resume from './assets/resume.jpg';
 import resumepdf from './assets/Resume - Neil Prabhu.pdf'
 import linkedin from './assets/linkedin.png';
 import github from './assets/github.png';
+import rotate from './assets/rotate.gif';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
     var internship2022 = document.getElementById("internship-2022");
     internship2022.scrollIntoView({
       behavior: "smooth",
-      block: "end"
+      block: "start" //end
     });
   };
 
@@ -72,6 +73,11 @@ window.addEventListener('scroll', () => {
 
   return (
     <>
+        <div id='phone-rotate'>
+            <img src={rotate}/>
+            <h2>Please rotate your device.</h2>
+        </div>
+
         <nav id="navbar">
             <a id="neilprabhu" onClick={neilPrabhuClick}>Neil Prabhu</a>
             <ul>
@@ -84,7 +90,7 @@ window.addEventListener('scroll', () => {
         </nav>
         
         <div id="background-image">
-            <h2>I am <span class="dynamic-text">{text}</span><Cursor cursorBlinking={false}/></h2>
+            <h2>I am <span className="dynamic-text">{text}</span><Cursor cursorBlinking={false}/></h2>
         </div>
 
         <section id="about-me">
@@ -147,7 +153,7 @@ window.addEventListener('scroll', () => {
                         parameters in a modal window on the flight search results (FSR) screen. 
                     </p>
                     <p>Specifically, I worked with developers, business 
-                        analysts, UX, and QA teams throughout the development process. I implemented components as per the MVC model and handled 
+                        analysts, UX, and QA teams throughout the development process. I implemented components as per the MVVM model and handled 
                         the underlying logic behind user inputs. When the development stage was complete, I performed rudimentary unit, regression, 
                         and E2E testing on several of the deliverables.
                     </p>
