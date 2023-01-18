@@ -383,7 +383,7 @@ nav.learnMoreHighlight #nav-learn-more {
         color: white;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-size: 13px; // Should be same
+        font-size: 12px; // Should be same
         font-weight: 700;
         transition: $transitionTime;
     }
@@ -393,7 +393,7 @@ nav.learnMoreHighlight #nav-learn-more {
         margin: 0 15px;
         text-decoration: none;
         letter-spacing: 2px;
-        font-size: 13px; // Should be same
+        font-size: 12px; // Should be same
         font-weight: 500px;
         transition: $transitionTime;
         padding: 7px;
@@ -401,7 +401,7 @@ nav.learnMoreHighlight #nav-learn-more {
     }
 
     nav.reduced #neilprabhu, nav.reduced ul li a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     #background-image h2 {
@@ -514,7 +514,7 @@ nav.learnMoreHighlight #nav-learn-more {
 }
 
 //below 830 force rotate
-@media (width < 830px) {
+@media (width < 800px) { //830
     #background-image, #about-me, #education-and-skills, #me1, 
     #internship-2022, #my-projects, #me2, #resume, #learn-more, #footer {
         display: none;
